@@ -23,16 +23,24 @@ let createMenuItem = (foodName, description, price) => {
     console.log(menu);
 
     const contentDiv = document.getElementById('content');
+    const menuCard = document.createElement('div');
+    menuCard.classList.add('menuCard');
+
 
     const menuItemName = document.createElement('div');
     menuItemName.textContent = foodName;
-    contentDiv.appendChild(menuItemName);
+    menuItemName.classList.add("menuText");
+    menuCard.appendChild(menuItemName);
     const menuItemDesc = document.createElement('div');
     menuItemDesc.textContent = description;
-    contentDiv.appendChild(menuItemDesc);
+    menuItemDesc.classList.add("menuText");
+    menuCard.appendChild(menuItemDesc);
     const menuPrice = document.createElement('div');
     menuPrice.textContent = price;
-    contentDiv.appendChild(menuPrice);
+    menuPrice.classList.add("menuPrice");
+    menuCard.appendChild(menuPrice);
+
+    contentDiv.appendChild(menuCard);
 }
 
 export {populatePageMenu};
