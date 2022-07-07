@@ -1,3 +1,5 @@
+import Spag from './spag.jpg';
+
 let populatePageMain = () => {
     const contentDiv = document.getElementById('content');
 
@@ -5,7 +7,7 @@ let populatePageMain = () => {
     pageHeader.innerText = "SPAGHETTI RESTAURANT";
     contentDiv.appendChild(pageHeader);
     const pageImg = document.createElement('img');
-    pageImg.src = ('/src/spag.jpg');
+    pageImg.src = (Spag);
     contentDiv.appendChild(pageImg);
     const pageDesc = document.createElement('p');
     pageDesc.innerText = "What a great restaurant this is. I fricken love spaghetti.";
