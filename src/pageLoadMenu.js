@@ -43,4 +43,8 @@ let createMenuItem = (foodName, description, price) => {
     contentDiv.appendChild(menuCard);
 }
 
-export {populatePageMenu};
+let unloadMenu = () => {
+    menu.splice(0, menu.length)
+}
+
+export {populatePageMenu,unloadMenu};
